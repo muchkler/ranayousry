@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <title></title>
+</head>
+
+<body>
+    
+<div class="preload">
+  <img src="images/animated_loading__by__amiri.gif">
+</div>
+
+<div class="entirety">    
+    
+<div class="firstpage">
+    
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#secondpage">Work</a></li>
+        <li><a href="#thirdpage">Contact Me</a></li>
+    </ul>
+    
+    <div class="centerelements">
+        <h1><span>Rana</span> Yousry</h1>
+        <p>paintings on demand</p>
+        <a href="#secondpage"><div class="button">View work</div></a>
+    </div>
+    
+    <h2>Paintings show
+        <span
+        class="txt-rotate"
+        data-period="2000"
+        data-rotate='[ "life.", "meaning.", "purity." ]'></span>
+    </h2>
+</div>
+
+<div class="secondpage" id="secondpage">
+
+    <div class="images">
+        <img src="images/Mask%20Group%201.png"><img src="images/Mask%20Group%204.png"><img src="images/Mask%20Group%205.png">
+        <img src="images/MG5.png">
+        <img src="images/Mask%20Group%209.png">
+        <img src="images/Mask%20Group%208.png">
+        <img src="images/Mask%20Group%207.png">
+        <img src="images/Mask%20Group%206.png">
+        <img src="images/Mask%20Group%2010.png">
+        <img src="images/Mask%20Group%2011.png">
+        <img src="images/Mask%20Group%2012.png">
+        <img src="images/Mask%20Group%2013.png">
+    </div>
+    
+    <a href="#secondpage"><div class="button2">Contact Me</div></a>
+    
+</div>
+    
+<div class="thirdpage" id="thirdpage">
+
+    <div class="thirdcontent">
+        <h3>Contact Me</h3>
+        <p class="thirdp">If you have any inquiries about my paintings or work, feel free to contact me through either Facebook or Instagram!</p> 
+        <a href="https://www.facebook.com/PaintingOnDemand/"><img src="images/fb.png" class="social"></a>
+        <a href="https://www.instagram.com/paintingsondemand/"><img src="images/insta.png" class="social"></a>
+    </div>    
+    
+    
+</div>    
+</div>    
+    
+<script src="script.js"></script>    
+<!--Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>

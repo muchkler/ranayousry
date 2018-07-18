@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+.entirety{
+    display: none; 
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.firstpage{
+    background: url(images/bg3.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    padding-top: 20px;
+}
+
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+    font-size: 13px;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+    color: white; 
+}
+
+.nav li:hover{
+    border-bottom: 2px solid white; 
+}
+
+a{
+    text-decoration: none; 
+}
+
+h1{
+    color: white; 
+    text-align: center; 
+    padding-top: 250px;
+    font-size: 50px;
+}
+
+span{
+    font-weight: 100;
+}
+
+p{
+    text-align: center; 
+    color: white;
+    letter-spacing: 5px;
+    font-weight: 100; 
+}
+
+.button{
+    background-color: #3BE496;
+    max-width: 100px;
+    line-height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+h2{
+    color: white;
+    text-align: center; 
+    padding-top: 250px;
+}
+
+.secondpage{
+    height: 130vh; 
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px;
+    padding-top: 25px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+img{
+    height: 130px;
+}
+
+.button2{
+    background-color: #3BE496;
+    max-width: 100px;
+    line-height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+.thirdpage{
+    height:500px;
+    background: url(images/bg.png);
+}
+
+.thirdcontent{
+    text-align: center; 
+    padding-top: 120px;
+    color: white;
+}
+
+.thirdp{
+    letter-spacing: 0; 
+    padding-top: 20px;
+    max-width: 250px;
+    margin: 0 auto; 
+}
+
+.social{
+    height: 50px;
+    padding-top: 20px;
+}
+
+.contactme{
+    height: 200px;
+}
+
+@media only screen and (min-width: 1080px){
+
+    .secondpage{
+        height: 60vh;
+    }
+    
+    .images{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 650px;
+        padding-left: 15px;
+    }
+}
+
+.preload{
+    margin: 0;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    margin-right: -50%; 
+    transform: translate(-50%, -50%);  
+}
